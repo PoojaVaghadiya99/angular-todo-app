@@ -1,27 +1,63 @@
-# GetItDone
+# Get-It-Done: Angular Todo App ✅
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+A simple and efficient Todo application built with Angular. Easily add, edit, and manage your tasks.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Add new todos with a title and description.
+- Mark tasks as completed.
+- Edit existing tasks.
+- Persist tasks using a service.
+- Responsive UI with Angular Material.
 
-## Code scaffolding
+## 📌 Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Follow these steps to set up the project on your local machine:
 
-## Build
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/PoojaVaghadiya99/angular-todo-app.git
+cd angular-todo-app
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
 
-## Running unit tests
+### 3️⃣ Run the Application
+```sh
+ng serve
+```
+Then, open **http://localhost:4200** in your browser.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📂 Project Structure
 
-## Running end-to-end tests
+```
+/src
+ ├── app/
+ │   ├── components/
+ │   │   ├── todo-form/      # Form for adding/editing todos
+ │   │   ├── todo-list/      # Displays the list of todos
+ │   ├── services/
+ │   │   ├── todo.service.ts # Manages todos
+ │   ├── app-routing.module.ts
+ │   ├── app.component.ts
+ │   ├── app.module.ts
+ ├── assets/
+ ├── styles.scss
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🛠 Built With
 
-## Further help
+- **Angular** - Framework for building web applications
+- **TypeScript** - Strongly typed JavaScript
+- **SCSS** - Styling for better UI
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 💡 Usage
+
+1. Click **"Add New Todo"** to add a task.
+2. Click **"Edit"** to update an existing task.
+3. Click **"Mark as Done"** to complete a task.
+
+
