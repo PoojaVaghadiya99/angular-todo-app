@@ -17,10 +17,8 @@ export class TodoListComponent {
   }
 
   editTodo(todoId: number) {
-    console.log('Navigating to edit:', todoId); // Debugging
     this.router.navigate(['/todos/edit', todoId]);
   }
-  
 
   completeTodo(todoId: number) {
     this.todoService.completeTodo(todoId);
