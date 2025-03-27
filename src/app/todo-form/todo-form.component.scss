@@ -85,3 +85,16 @@ button:disabled {
   background: #007bff;
   color: white;
 }
+
+.required {
+  color: red;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  text-align: left;
+}

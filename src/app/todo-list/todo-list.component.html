@@ -9,7 +9,8 @@
         <i class="fas fa-check-circle"></i> {{ todo.completed ? ' Done' : ' Mark as Done' }}
       </button>
 
-      <button (click)="editTodo(todo.id)">
+      <!-- Hide edit button if the task is done -->
+      <button *ngIf="!todo.completed" (click)="editTodo(todo.id)">
         <i class="fas fa-edit"></i> Edit
       </button>
     </li>
