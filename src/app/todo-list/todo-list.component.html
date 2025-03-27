@@ -1,0 +1,25 @@
+<div class="todo-container">
+  <h2><i class="fas fa-list-ul"></i> Your Todo List</h2>
+
+  <ul *ngIf="todos.length > 0; else noTodos">
+    <li *ngFor="let todo of todos" [class.completed]="todo.completed">
+      <span><strong>{{ todo.title }}</strong> - {{ todo.description }}</span>
+
+      <button (click)="completeTodo(todo.id)" [disabled]="todo.completed">
+        <i class="fas fa-check-circle"></i> {{ todo.completed ? ' Done' : ' Mark as Done' }}
+      </button>
+
+      <button (click)="editTodo(todo.id)">
+        <i class="fas fa-edit"></i> Edit
+      </button>
+    </li>
+  </ul>
+
+  <ng-template #noTodos>
+    <p class="empty-message"><i class="fas fa-folder-open"></i> No todos available.</p>
+  </ng-template>
+
+  <a routerLink="/todos/new" class="add-btn">
+    <i class="fas fa-plus-circle"></i> Add New Todo
+  </a>
+</div>

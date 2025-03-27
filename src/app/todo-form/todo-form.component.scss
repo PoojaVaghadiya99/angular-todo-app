@@ -1,0 +1,87 @@
+/* Form Container Styling */
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Input Field Styling */
+input, textarea {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+button:hover {
+  background: #0056b3;
+}
+
+/* Disabled Button */
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Back Button Hover */
+.back-btn:hover {
+  background: #007bff;
+  color: white;
+}
